@@ -1,0 +1,17 @@
+@lesson12_HostAddress = http://localhost:5081
+
+### Создание продукта (валидный)
+POST {{lesson12_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Ноутбук",
+  "description": "Мощный игровой ноутбук",
+  "price": 120000.50,
+  "stock": 10,
+  "category": "Электроника"
+}
+
+### Получение продукта по ID=1
+GET {{lesson12_HostAddress}}/api/products/1
+Accept: application/json
